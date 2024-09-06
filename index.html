@@ -1,0 +1,275 @@
+<!--
+  Title: Meta Front-End Developer Professional Certificate Portfolio Project  
+  Author: Brooke Taylor
+  Date: 09/01/2024
+  Description: The Lucky Shrub mock site for portfolio project. 
+
+  I'd like to point out that this site wasn't designed with mobile in mind. 
+  Part of the project parameters included the large banner and three columns 
+  below to demonstrate CSS Grids/Flexbox.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="The Lucky Shrub - Your Tucson landscaping experts. Discover tips, services, and customer stories for a greener garden." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding Google Fonts for Review Icon. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     
+    <link rel="stylesheet" href="styles/styles.css">
+
+<!-- 
+    Make it clear this is a home page for one of the four fictional clients.  
+-->
+    <title>The Lucky Shrub</title>
+</head>
+<body>
+
+<!-- 
+  Header using flexbox to center client logo. 
+  The Lucky Shrub Logo at the top of the page. 
+--> 
+<header>
+  <figure>
+    <img src="images/assetTwo.png" alt="The Lucky Shrub Logo" alt="Logo of The Lucky Shrub with a green shrub graphic" width="100" height="150">
+  </figure>
+</header>
+
+<!-- 
+  A horizontal navigation menu with four links below the logo. 
+  One of the links in the navigation menu should link to the home page itself. 
+-->
+<nav>
+  <ul>
+    <li><a href="index.html" title="Home Page">Home Page</a></li>
+    <li><a href="#" title="Products Page">Products</a></li>
+    <li><a href="#" title="Contact Page">Contact</a></li>
+    <li><a href="#" title="Info Page">Info</a></li>
+  </ul>
+</nav>
+
+<!-- 
+  Main content contain a large promotional banner at the top and three columns 
+  below it, each containing an image and some text.  
+-->
+<main>
+
+  <div class="container">
+
+    <section>
+      <div>
+
+        <h1>Labor Day Special: </h1>
+
+        <p><b>Cultivate Your Oasis with Lucky Shrub</b></p>
+        <p style="border-top: 1px solid #333;">Enjoy an additional 20% off all landscaping services.</p> <p>Sale ends Sept 5th.</p>
+
+        <button>Book Now!</button>
+
+      </div>
+    </section>
+
+
+
+
+    
+    <article id="thrivingPlants">
+      <div>
+
+        <h2>Guide to Thriving Plants in Tucson</h2>
+
+        <figure>
+          <img src="images/baileya.jpg" alt="Photo of Desert Marigold - Baileya multiradiata" width="200" height="300">
+          <figcaption>Desert Marigold<br>(Baileya multiradiata)</figcaption>
+        </figure>
+
+        <p>To care for a desert marigold in Tucson, Arizona, start by planting it in a location that receives full sun, as it thrives in the bright, direct sunlight typical of the Sonoran Desert. Water the plant sparingly, as it is drought-tolerant and generally only needs extra water during prolonged dry spells or if grown in a container. Ensure it’s planted in well-draining soil, preferably sandy or rocky, and avoid heavy clay. Fertilizing is minimal; in fact, too much fertilizer can inhibit blooming, so it’s best to refrain from adding any unless absolutely necessary.</p>
+          <br>  
+        <p>Why Grow Native Plants? Choosing native plants for your garden, like the Desert Marigold, helps support the local ecosystem by providing habitat and food for local wildlife, such as pollinators and birds. Native plants are better adapted to the local climate and soil, making them more resilient to drought, pests, and diseases. This means they require less water, fertilizer, and maintenance, helping you save time and resources while contributing to the health of the environment. Plus, with their unique beauty and ability to thrive naturally, native plants create a sense of place and connection to the local landscape.</p>
+
+      </div>
+    </article>
+
+
+
+
+
+    <article>
+      <div>
+
+        <h2>Customer Reviews</h2>
+
+        <!-- Google Review Icon. -->
+        <div class="centerReviewIcon">
+          <span class="material-symbols-outlined reviewBubble">reviews</span> 
+        </div>
+
+        <div class="review-container">
+
+          <div class="review-header">  
+
+            <div class="stars">
+              <span class="material-symbols-outlined">star</span>
+              <span class="material-symbols-outlined">star</span>                  
+              <span class="material-symbols-outlined">star</span>
+              <span class="material-symbols-outlined">star</span>
+              <span class="material-symbols-outlined">star</span>
+            </div>
+            
+            <h3 class="review-title">Best landscapers in town!</h3>
+              
+            <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>            
+            
+          </div>
+
+          <div class="review-content">
+            <p>Jason comes strongly recommended and he fixed my nightmare yard!</p>
+          </div>
+
+        </div>
+
+
+
+
+
+      <div class="review-container">
+
+        <div class="review-header">
+          
+          <div class="stars">
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>                  
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+          </div>
+
+          <h3 class="review-title">Maria is the best!</h3>
+
+          <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>            
+        
+        </div>
+
+        <div class="review-content">
+          <p>Maria at the nursery helped me select the best outdoor plants for my yard!</p>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="review-container">
+
+      <div class="review-header">
+
+        <div class="stars">
+          <span class="material-symbols-outlined">star</span>
+          <span class="material-symbols-outlined">star</span>                  
+          <span class="material-symbols-outlined">star</span>
+        </div>
+
+        <h3 class="review-title">PLEASE HELP ME</h3>
+
+        <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>            
+
+      </div>
+
+      <div class="review-content">
+
+        <figure>
+        <img src="images/disaster.jpg" alt="Botched yard project in need of Lucky Shrub services." width="200" height="300">
+        </figure>
+
+        <p>I had Lucky Shrub come out years ago but I've let my yard go since and desperately need help!!</p>
+
+      </div>
+
+      </div>
+
+
+
+
+
+      <div class="review-container">
+
+        <div class="review-header">
+
+          <div class="stars">
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>                  
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+          </div>
+
+          <h3 class="review-title">Best lawncare in the Tucson area</h3>
+
+          <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>  
+
+        </div>
+
+        <div class="review-content">
+          <p>I only trust my lawn to The Lucky Shrub! Jason and his team do great work everytime!</p>
+        </div>
+
+      </div>
+
+      </div>
+    </article>
+
+
+
+
+
+    <article id="JasonAndMaria">
+      <div>
+
+        <h2>Meet the Team</h2>
+
+        <figure>
+          <img src="images/JasonAndMaria.jpg" alt="Image of Jason and Maria gardening together" width="200" height="300">
+          <figcaption>Jason and Maria</figcaption>
+        </figure>
+
+        <p>Lucky Shrub was started by a husband and wife team, Jason and Maria, who share a long-time love for plants. Jason is the garden architect. He creates and oversees all designs while managing his team of landscapers. With over a decade of experience in sustainable landscaping, he brings a unique approach to creating outdoor spaces that blend beauty and functionality, emphasizing the use of native plants that thrive in the Tucson climate. His passion lies in crafting gardens that tell a story and offer a peaceful retreat for every homeowner.</p>
+          <br>
+        <p>Maria, on the other hand, is the driving force behind Lucky Shrub's brand and customer experience. She manages all the marketing for the company and oversees the nursery, ensuring that the selection of plants reflects their mission to promote sustainable gardening practices. With her background in communications and a deep understanding of local flora, Maria loves connecting with the community, sharing gardening tips, and inspiring people to bring more green into their lives. Together, Jason and Maria combine their skills to turn every landscape into a vibrant, living canvas.</p>
+
+      </div>
+    </article>
+
+  </div><!-- *** END OF CONTAINER *** -->
+
+</main>
+
+
+
+
+
+<!-- 
+  Footer that is split into two columns.    
+  Left column contains a small version of the client logo and 
+  the right column contains the copyright text.
+-->
+<footer>
+
+  <div>
+    <figure>
+      <img src="images/assetThree.png" alt="The Lucky Shrub Logo" width="50" height="75">
+    </figure>
+  </div>
+
+  <div>
+    <h3>The Lucky Shrub</h3>
+    <p>&copy Copyright <span id="current-year">YYYY</span>. All Rights Reserved.</p>
+  </div>
+  
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

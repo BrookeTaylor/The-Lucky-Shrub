@@ -1,0 +1,311 @@
+/**
+  Title: Meta Front-End Developer Professional Certificate Portfolio Project
+  Author: Brooke Taylor
+  Date: 09/01/24
+  Description: The Lucky Shrub mock site for portfolio project stylesheet.
+*/
+
+
+
+
+
+/*          -----***** ATTRIBUTES FOR ALL *****-----          */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+}
+
+html, body {
+  height: 100%;
+  color: #333;
+}
+
+
+h1 {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 1.025rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.005rem;
+}
+
+
+figcaption {
+  font-weight: 600;
+  text-align: center;
+}
+
+/*          -----***** ATTRIBUTES FOR ALL *****-----          */
+
+
+
+
+
+/*          -----***** HEADER / NAV *****-----          */
+/* Set up a flexbox CSS Layout. */
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 1vh;
+  background-color: rgba(181, 52, 52, .075); 
+}
+
+
+nav {
+  background-color: rgba(181, 52, 52, .075); 
+  padding: .25rem;
+}
+
+nav ul {
+  background-color: #26877f;
+  width: 75vw;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: inset .5rem .5rem .75rem rgba(0, 0, 0, 0.35);
+  border-radius: 5rem;
+}
+
+nav ul li {
+  list-style: none; 
+  padding: 1rem; 
+}
+
+nav ul li a {
+  padding: .75rem;
+  border: .025rem none #26877f;
+}
+
+/* LVHA */
+nav a:link {
+  text-decoration: none;
+  color: #EDE7F1;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: #EDE7F1;
+}
+
+nav a:hover {
+ box-shadow: .5rem .5rem .75rem rgba(0, 0, 0, 0.55);
+ border-radius: 5rem;
+}
+
+nav a:active {
+  background-color: rgba(0, 0, 0, .25);
+  border: .025rem none #333;
+  box-shadow: .5rem .5rem .75rem rgba(0, 0, 0, 0.25);
+}
+/*          -----***** HEADER / NAV *****-----          */
+
+
+
+
+
+/*          -----***** MAIN CONTENT *****-----          */
+/* 
+  Set up a grid-based CSS Layout. 
+  Set up three columns for the second row. 
+*/
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* 
+  Broken the main content into two rows. 
+  Created a full-width column for the first row of main content. 
+
+  Banner.
+*/
+section {
+  grid-column: 1 / span 3;
+  background-image: url('/images/backyardOasis.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45vh;
+  background-color: #fff;
+}
+
+/* Banner Promo */
+section div {
+  background-color: #fff;
+  margin: 1rem;
+  margin-right: 5rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  line-height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  float: right;
+  text-align: right;
+}
+
+section button {
+  padding: .5rem;
+  background-color: #B53434;
+  border-radius: 5rem;
+  border: 1px outset #333;
+  margin-top: 1rem;
+}
+
+/* LVHA */
+section button:link {
+  text-decoration: none;
+  background-color: #B53434;
+}
+
+section button:visited {
+  text-decoration: none;
+  background-color: #B53434;
+}
+
+section button:hover {
+  box-shadow: .5rem .5rem .55rem rgba(0, 0, 0, 0.55);
+  border: 1px inset #333;
+}
+
+section button:active {
+  box-shadow: .5rem .5rem .55rem rgba(0, 0, 0, 0.25);
+  border: 1px inset #333;
+}
+
+
+/* Articles. */
+.container article {
+  padding: 5% 5%;
+  line-height: 1.25rem;
+}
+
+
+article figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+article figure img {
+  border-radius: 1em;
+  max-width: 100%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#thrivingPlants, #JasonAndMaria {
+  background-color: rgba(181, 52, 52, .075);
+}
+
+#thrivingPlants div {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#thrivingPlants p {
+  text-indent: 1.5em;
+  padding: 0% 5%;
+}
+
+#JasonAndMaria div {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#JasonAndMaria p {
+  text-indent: 1.5em;
+  padding: 0% 5%;
+}
+
+
+/* Reviews */
+.centerReviewIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.reviewBubble {
+  font-size: 5rem;
+  margin: 2rem;
+}
+
+.review-container {
+  background-color: white;
+  padding: .5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  border: 1px solid #ddd;
+  max-width: 25vw;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+}
+
+.half {
+  color: silver;
+  font-size: 20px;
+}
+
+.review-title {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s;
+}
+
+.review-content {
+  display: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #555;
+}
+
+.flipped {
+  transform: rotate(180deg); 
+}
+/*          -----***** MAIN CONTENT *****-----          */
+
+
+
+
+
+/*          -----***** FOOTER *****-----          */
+/* Created two half width columns for the footer. */ 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #26877f;
+  padding: 1rem;
+  color: #EDE7F1;
+  align-items: center;
+}
+/*          -----***** FOOTER *****-----          */
